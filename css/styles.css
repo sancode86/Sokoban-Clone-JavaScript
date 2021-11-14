@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+.centrarContenido{
+    text-align: center;
+    align-items: center;
+    align-self: center;
+}
+.botonMoverse{
+    width: 70px;
+    height: 66px;
+    margin-bottom: 2px;
+    padding: 0em 0em 0em !important;
+}
+.estiloBotonLink{
+    margin: 3px;
+}
+.diseñoMapa{
+    display: flex;
+  flex-wrap: wrap;
+  max-width: 425px;
+  margin: auto;
+}
+.cuadrado{
+    border: 1px solid #292929;
+    flex: 1 0 12%;  
+    height: 57px;
+    width: 50px;
+    margin: 0;
+    font-size: 8px;  
+    background-color: #b1b1b1;  
+}
+.botones{
+    margin-top: 25px;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    margin: 2px !important;
+    padding: 0 !important;
+    font-family: 'Press Start 2P', cursive !important;
+    color: white;
+}
+.numeroNivel{
+    color: rgb(220 220 220);
+    font-size: 24px;
+}
+@media only screen and (max-width: 600px) {
+    .cuadrado{
+        border: 1px solid #292929;
+        flex: 1 0 12%;  
+        height: 43px;
+        width: 50px;
+        margin: 0;
+        font-size: 8px;     
+    }
+}
+p{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+.teclaUp{
+    background-image: url("/img/up.png");
+    background-size: contain;
+    background-position-x: center;
+}
+.teclaIzq{
+    background-image: url("/img/left.png");
+    background-size: contain;
+    background-position-x: center;
+}
+.teclaDown{
+    background-image: url("/img/down.png");
+    background-size: contain;
+    background-position-x: center;
+}
+.teclaDer{
+    background-image: url("/img/right.png");
+    background-size: contain;
+    background-position-x: center;
+}
+.pushy__btn:active {
+ 
+    margin-top: 0px !important;
+}
+html, body{
+    overflow: hidden;
+    overflow-y: hidden; 
+    overflow-x: hidden; 
+}
+
+.estadisticas{
+    display: inline-flex;
+}
+.oscuroPerder{
+    background: black;
+    height: 1800px;
+}
+
+.image {
+    position: fixed;
+    top: -1%;
+    left: -43%;
+    width: 787px;
+    height: 800px;
+    overflow: hidden;
+    margin: -60px 0 0 -60px;
+    -webkit-animation: spin 50s linear infinite;
+    -moz-animation: spin 50s linear infinite;
+    animation: spin 50s linear infinite;
+    z-index: -1;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+html, body {margin: 0; height: 100%; overflow: hidden }
+
+.darkBack{
+
+    background-color: #2f2f2f;
+}
+@media only screen and (min-width: 400px) and (max-width: 800px) {
+    .image {
+        width: 880px !important;
+        height: 877px !important;
+    }
+    .numeroNivel {          
+        margin: 18px !important;
+    }
+    .cuadrado {      
+        height: 52px;
+    }
+}
+
+
+@media only screen and (max-width: 365px) {
+    .image {
+        width: 787px;
+        height: 800px;}
+    .numeroNivel {          
+        margin: 8px !important;
+    }    
+       
+}
